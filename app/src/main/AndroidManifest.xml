@@ -25,6 +25,8 @@
 
         <activity android:name=".BDFenceActivity"/>
 
+        <activity android:name=".FenceActivity"
+            android:screenOrientation="portrait"/>
         <service
             android:name="com.baidu.trace.LBSTraceService"
             android:enabled="true"

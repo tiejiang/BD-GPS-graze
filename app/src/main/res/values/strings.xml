@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">GPSapplicatiion</string>
+    <!-- Activity标题名称-->
+    <string name="base_title">BaseActivity</string>
+    <string name="login_title">LoginActivity</string>
+    <string name="tracing_title">轨迹追踪</string>
+    <string name="tracing_options_title">追踪设置</string>
+    <string name="track_query_title">轨迹查询</string>
+    <string name="track_query_options_title">查询设置</string>
+    <string name="fence_title">地理围栏</string>
+    <string name="bos_title">图片服务</string>
+    <string name="cache_manage_title">缓存管理</string>
+    <string name="fag_title">常见问题</string>
+
+    <string name="fence_desc">本地、云端围栏双重监控</string>
 </resources>
