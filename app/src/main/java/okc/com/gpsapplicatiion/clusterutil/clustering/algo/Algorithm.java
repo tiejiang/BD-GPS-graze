@@ -4,11 +4,12 @@
 
 package okc.com.gpsapplicatiion.clusterutil.clustering.algo;
 
-import com.baidu.mapapi.clusterutil.clustering.Cluster;
-import com.baidu.mapapi.clusterutil.clustering.ClusterItem;
 
 import java.util.Collection;
 import java.util.Set;
+
+import okc.com.gpsapplicatiion.clusterutil.clustering.Cluster;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterItem;
 
 /**
  * Logic for computing clusters

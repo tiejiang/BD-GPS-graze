@@ -25,13 +25,6 @@ import android.util.SparseArray;
 import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 
-import com.baidu.mapapi.clusterutil.MarkerManager;
-import com.baidu.mapapi.clusterutil.clustering.Cluster;
-import com.baidu.mapapi.clusterutil.clustering.ClusterItem;
-import com.baidu.mapapi.clusterutil.clustering.ClusterManager;
-import com.baidu.mapapi.clusterutil.projection.Point;
-import com.baidu.mapapi.clusterutil.projection.SphericalMercatorProjection;
-import com.baidu.mapapi.clusterutil.ui.IconGenerator;
 import com.baidu.mapapi.map.BaiduMap;
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
@@ -40,7 +33,6 @@ import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.Projection;
 import com.baidu.mapapi.model.LatLng;
 import com.baidu.mapapi.model.LatLngBounds;
-import com.baidu.track.R;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -55,13 +47,22 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import static com.baidu.mapapi.clusterutil.clustering.algo.NonHierarchicalDistanceBasedAlgorithm.MAX_DISTANCE_AT_ZOOM;
+import okc.com.gpsapplicatiion.R;
+import okc.com.gpsapplicatiion.clusterutil.MarkerManager;
+import okc.com.gpsapplicatiion.clusterutil.clustering.Cluster;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterItem;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterManager;
+import okc.com.gpsapplicatiion.clusterutil.projection.Point;
+import okc.com.gpsapplicatiion.clusterutil.projection.SphericalMercatorProjection;
+import okc.com.gpsapplicatiion.clusterutil.ui.IconGenerator;
+
+import static okc.com.gpsapplicatiion.clusterutil.clustering.algo.NonHierarchicalDistanceBasedAlgorithm.MAX_DISTANCE_AT_ZOOM;
 
 /**
  * The default view for a ClusterManager. Markers are animated in and out of clusters.
  */
 public class DefaultClusterRenderer<T extends ClusterItem> implements
-        com.baidu.mapapi.clusterutil.clustering.view.ClusterRenderer<T> {
+        okc.com.gpsapplicatiion.clusterutil.clustering.view.ClusterRenderer<T> {
     private static final boolean SHOULD_ANIMATE = Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB;
     private final BaiduMap mMap;
     private final IconGenerator mIconGenerator;
@@ -159,9 +160,9 @@ public class DefaultClusterRenderer<T extends ClusterItem> implements
         return background;
     }
 
-    private com.baidu.mapapi.clusterutil.ui.SquareTextView makeSquareTextView(Context context) {
-        com.baidu.mapapi.clusterutil.ui.SquareTextView squareTextView =
-                new com.baidu.mapapi.clusterutil.ui.SquareTextView(context);
+    private okc.com.gpsapplicatiion.clusterutil.ui.SquareTextView makeSquareTextView(Context context) {
+        okc.com.gpsapplicatiion.clusterutil.ui.SquareTextView squareTextView =
+                new okc.com.gpsapplicatiion.clusterutil.ui.SquareTextView(context);
         ViewGroup.LayoutParams layoutParams = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT);
         squareTextView.setLayoutParams(layoutParams);

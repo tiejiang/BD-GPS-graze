@@ -1,6 +1,5 @@
 package okc.com.gpsapplicatiion;
 
-import android.app.Application;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;

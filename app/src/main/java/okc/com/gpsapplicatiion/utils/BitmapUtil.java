@@ -5,7 +5,8 @@ import android.content.res.Resources;
 
 import com.baidu.mapapi.map.BitmapDescriptor;
 import com.baidu.mapapi.map.BitmapDescriptorFactory;
-import com.baidu.track.R;
+
+import okc.com.gpsapplicatiion.R;
 
 /**
  * Created by baidu on 17/3/8.

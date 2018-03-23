@@ -8,8 +8,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.baidu.mapapi.map.BaiduMap;
-import com.baidu.track.R;
-import com.baidu.track.activity.TrackQueryActivity;
+
+import okc.com.gpsapplicatiion.R;
+import okc.com.gpsapplicatiion.TrackQueryActivity;
 
 /**
  * 轨迹分析详情对话框布局

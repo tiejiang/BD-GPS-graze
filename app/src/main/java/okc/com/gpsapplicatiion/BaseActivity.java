@@ -6,7 +6,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.baidu.track.utils.ViewUtil;
+import okc.com.gpsapplicatiion.utils.ViewUtil;
+
 
 public abstract class BaseActivity extends Activity {
 

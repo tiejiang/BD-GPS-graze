@@ -6,8 +6,6 @@ import android.content.SharedPreferences;
 import android.telephony.TelephonyManager;
 
 import com.baidu.mapapi.model.LatLng;
-import com.baidu.track.TrackApplication;
-import com.baidu.track.model.CurrentLocation;
 
 import java.sql.Timestamp;
 import java.text.DecimalFormat;
@@ -15,6 +13,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import okc.com.gpsapplicatiion.MyApplication;
+import okc.com.gpsapplicatiion.model.CurrentLocation;
 
 /**
  * Created by baidu on 17/1/23.
@@ -179,7 +180,7 @@ public class CommonUtil {
     /**
      * 保存当前定位点
      */
-    public static void saveCurrentLocation(TrackApplication trackApp) {
+    public static void saveCurrentLocation(MyApplication trackApp) {
         SharedPreferences.Editor editor = trackApp.trackConf.edit();
         StringBuffer locationInfo = new StringBuffer();
         locationInfo.append(CurrentLocation.locTime);

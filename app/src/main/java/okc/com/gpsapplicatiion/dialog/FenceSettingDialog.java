@@ -13,7 +13,8 @@ import android.widget.TextView;
 
 import com.baidu.trace.api.fence.FenceShape;
 import com.baidu.trace.api.fence.FenceType;
-import com.baidu.track.R;
+
+import okc.com.gpsapplicatiion.R;
 
 /**
  * 围栏设置对话框

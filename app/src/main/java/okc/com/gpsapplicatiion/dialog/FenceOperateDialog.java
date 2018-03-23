@@ -9,8 +9,9 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.baidu.track.R;
-import com.baidu.track.activity.FenceActivity;
+import okc.com.gpsapplicatiion.FenceActivity;
+import okc.com.gpsapplicatiion.R;
+
 
 /**
  * 服务控制对话框

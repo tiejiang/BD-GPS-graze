@@ -6,13 +6,13 @@ package okc.com.gpsapplicatiion.clusterutil.clustering.algo;
 
 import android.support.v4.util.LruCache;
 
-import com.baidu.mapapi.clusterutil.clustering.Cluster;
-import com.baidu.mapapi.clusterutil.clustering.ClusterItem;
-
 import java.util.Collection;
 import java.util.Set;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import okc.com.gpsapplicatiion.clusterutil.clustering.Cluster;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterItem;
 
 /**
  * Optimistically fetch clusters for adjacent zoom levels, caching them as necessary.

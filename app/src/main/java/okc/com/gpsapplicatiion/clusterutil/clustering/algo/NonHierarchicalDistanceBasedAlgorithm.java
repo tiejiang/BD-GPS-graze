@@ -4,12 +4,6 @@
 
 package okc.com.gpsapplicatiion.clusterutil.clustering.algo;
 
-import com.baidu.mapapi.clusterutil.clustering.Cluster;
-import com.baidu.mapapi.clusterutil.clustering.ClusterItem;
-import com.baidu.mapapi.clusterutil.projection.Bounds;
-import com.baidu.mapapi.clusterutil.projection.Point;
-import com.baidu.mapapi.clusterutil.projection.SphericalMercatorProjection;
-import com.baidu.mapapi.clusterutil.quadtree.PointQuadTree;
 import com.baidu.mapapi.model.LatLng;
 
 import java.util.ArrayList;
@@ -20,6 +14,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import okc.com.gpsapplicatiion.clusterutil.clustering.Cluster;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterItem;
+import okc.com.gpsapplicatiion.clusterutil.projection.Bounds;
+import okc.com.gpsapplicatiion.clusterutil.projection.SphericalMercatorProjection;
+import okc.com.gpsapplicatiion.clusterutil.quadtree.PointQuadTree;
+import okc.com.gpsapplicatiion.clusterutil.projection.Point;
 
 /**
  * A simple clustering algorithm with O(nlog n) performance. Resulting clusters are not
@@ -121,9 +122,8 @@ public class NonHierarchicalDistanceBasedAlgorithm<T extends ClusterItem> implem
                     distanceToCluster.put(candidate, 0d);
                     continue;
                 }
-                com.baidu.mapapi.clusterutil.clustering.algo.StaticCluster<T> cluster =
-                        new com.baidu.mapapi.clusterutil.clustering.algo
-                                .StaticCluster<T>(candidate.mClusterItem.getPosition());
+                StaticCluster<T> cluster =
+                        new StaticCluster<T>(candidate.mClusterItem.getPosition());
                 results.add(cluster);
 
                 for (QuadItem<T> clusterItem : clusterItems) {

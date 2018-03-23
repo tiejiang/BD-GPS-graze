@@ -11,7 +11,7 @@ import java.util.Collection;
 /**
  * A collection of ClusterItems that are nearby each other.
  */
-public interface Cluster<T extends com.baidu.mapapi.clusterutil.clustering.ClusterItem> {
+public interface Cluster<T extends okc.com.gpsapplicatiion.clusterutil.clustering.ClusterItem> {
     public LatLng getPosition();
 
     Collection<T> getItems();

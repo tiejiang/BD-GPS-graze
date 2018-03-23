@@ -4,13 +4,13 @@
 
 package okc.com.gpsapplicatiion.clusterutil.quadtree;
 
-import com.baidu.mapapi.clusterutil.projection.Bounds;
-import com.baidu.mapapi.clusterutil.projection.Point;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import okc.com.gpsapplicatiion.clusterutil.projection.Bounds;
+import okc.com.gpsapplicatiion.clusterutil.projection.Point;
 /**
  * A quad tree which tracks items with a Point geometry.
  * See http://en.wikipedia.org/wiki/Quadtree for details on the data structure.

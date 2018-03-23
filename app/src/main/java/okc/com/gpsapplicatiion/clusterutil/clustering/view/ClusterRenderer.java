@@ -4,11 +4,12 @@
 
 package okc.com.gpsapplicatiion.clusterutil.clustering.view;
 
-import com.baidu.mapapi.clusterutil.clustering.Cluster;
-import com.baidu.mapapi.clusterutil.clustering.ClusterItem;
-import com.baidu.mapapi.clusterutil.clustering.ClusterManager;
 
 import java.util.Set;
+
+import okc.com.gpsapplicatiion.clusterutil.clustering.Cluster;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterItem;
+import okc.com.gpsapplicatiion.clusterutil.clustering.ClusterManager;
 
 /**
  * Renders clusters.

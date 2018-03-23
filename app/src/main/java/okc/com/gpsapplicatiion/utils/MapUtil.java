@@ -22,14 +22,15 @@ import com.baidu.mapapi.utils.CoordinateConverter;
 import com.baidu.trace.model.CoordType;
 import com.baidu.trace.model.SortType;
 import com.baidu.trace.model.TraceLocation;
-import com.baidu.track.TrackApplication;
-import com.baidu.track.model.CurrentLocation;
 
 import java.util.List;
 
-import static com.baidu.track.utils.BitmapUtil.bmArrowPoint;
-import static com.baidu.track.utils.BitmapUtil.bmEnd;
-import static com.baidu.track.utils.BitmapUtil.bmStart;
+import okc.com.gpsapplicatiion.MyApplication;
+import okc.com.gpsapplicatiion.model.CurrentLocation;
+
+import static okc.com.gpsapplicatiion.utils.BitmapUtil.bmArrowPoint;
+import static okc.com.gpsapplicatiion.utils.BitmapUtil.bmEnd;
+import static okc.com.gpsapplicatiion.utils.BitmapUtil.bmStart;
 
 /**
  * Created by baidu on 17/2/9.
@@ -154,7 +155,7 @@ public class MapUtil {
      *
      * @param trackApp
      */
-    public void setCenter(TrackApplication trackApp) {
+    public void setCenter(MyApplication trackApp) {
         if (!CommonUtil.isZeroPoint(CurrentLocation.latitude, CurrentLocation.longitude)) {
             LatLng currentLatLng = new LatLng(CurrentLocation.latitude, CurrentLocation.longitude);
             updateStatus(currentLatLng, false);
@@ -181,8 +182,8 @@ public class MapUtil {
         if (null != baiduMap.getProjection()) {
             Point screenPoint = baiduMap.getProjection().toScreenLocation(currentPoint);
             // 点在屏幕上的坐标超过限制范围，则重新聚焦底图
-            if (screenPoint.y < 200 || screenPoint.y > TrackApplication.screenHeight - 500
-                    || screenPoint.x < 200 || screenPoint.x > TrackApplication.screenWidth - 200
+            if (screenPoint.y < 200 || screenPoint.y > MyApplication.screenHeight - 500
+                    || screenPoint.x < 200 || screenPoint.x > MyApplication.screenWidth - 200
                     || null == mapStatus) {
                 animateMapStatus(currentPoint, 15.0f);
             }

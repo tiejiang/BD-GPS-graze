@@ -10,8 +10,8 @@ import android.widget.CheckBox;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.baidu.track.R;
-import com.baidu.track.activity.TrackQueryActivity;
+import okc.com.gpsapplicatiion.R;
+import okc.com.gpsapplicatiion.TrackQueryActivity;
 
 /**
  * 轨迹分析对话框
