@@ -26,4 +26,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/BaiduTraceSDK_v3_0_7.jar')
+    compile files('libs/bos-android-sdk-1.0.3.jar')
 }
